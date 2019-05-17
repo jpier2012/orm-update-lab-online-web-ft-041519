@@ -40,8 +40,8 @@ class Student
       SQL
     else
       sql = <<-SQL
-        INSERT INTO students (id, name, grade)
-        VALUES (?, ?, ?)
+        INSERT INTO students (name, grade)
+        VALUES (?, ?)
       SQL
     end
     DB[:conn].execute(sql, name, grade)
