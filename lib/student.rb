@@ -56,15 +56,7 @@ class Student
   end
 
   def self.new_from_db(row)
-    sql = <<-SQL
-      SELECT *
-      FROM students
-    SQL
-
-    DB[:conn].execute(sql).map do |row|
-      binding.pry
-      self.create(row[1], row[2])
-    end
+    self.create(row[1], row[2])
   end
 
 end
