@@ -17,7 +17,7 @@ class Student
       CREATE TABLE students IF NOT EXISTS (
         id INTEGER PRIMARY KEY,
         name TEXT,
-        grade INTEGER        
+        grade INTEGER
       )
     SQL
   end
