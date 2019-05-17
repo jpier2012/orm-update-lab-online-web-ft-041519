@@ -12,7 +12,7 @@ class Student
     @id = id
   end
 
-  def selfcreate_table
+  def self.create_table
     sql = <<-SQL
       CREATE TABLE students IF NOT EXISTS (
         id INTEGER PRIMARY KEY,
