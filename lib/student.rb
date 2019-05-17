@@ -73,7 +73,7 @@ class Student
 
   def update
     sql = <<-SQL
-      UPDATE IF EXISTS students
+      UPDATE students
       SET name = ?, grade = ?
       WHERE id = ?
     SQL
