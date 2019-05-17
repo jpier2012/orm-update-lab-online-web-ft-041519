@@ -60,7 +60,7 @@ class Student
       SELECT *
       FROM students
     SQL
-    
+
     DB[:conn].execute(sql).map do |row|
       self.create()
     end
