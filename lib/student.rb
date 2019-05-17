@@ -62,6 +62,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql).map do |row|
+      binding.pry
       self.create(row[1], row[2])
     end
   end
