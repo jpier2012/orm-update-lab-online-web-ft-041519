@@ -62,7 +62,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql).map do |row|
-      self.create()
+      self.new(row[1], row[2])
     end
   end
 
